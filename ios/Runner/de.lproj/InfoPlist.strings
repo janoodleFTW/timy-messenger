@@ -1,0 +1,3 @@
+NSCameraUsageDescription = "Für Bild- und Videonachrichten benötigten wir Zugriff auf deine Kamera";
+NSMicrophoneUsageDescription = "Dein Mikrofon wird für Videonachrichten benötigt";
+NSPhotoLibraryUsageDescription = "Für Bildnachrichten benötigen wir Zugriff auf deine Fotos";

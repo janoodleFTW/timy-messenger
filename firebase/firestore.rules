@@ -1,0 +1,36 @@
+service cloud.firestore {
+    match /databases/{database}/documents {
+        function userIsMemberOfGroup(groupId) {
+            return request.auth.uid in get(/databases/$(database)/documents/groups/$(groupId)).data.members;
+        }
+
+        match /calendar/{calendarId} {
+            allow read, write: if request.auth.uid != null; 
+        }
+
+        match /groups/{groupId} {
+            allow read, write: if request.auth.uid in resource.data.members;
+
+            // TODO: Channels should be filtered on client side by their visibility
+            match /channels/{channelId} {
+                allow read, write: if userIsMemberOfGroup(groupId);
+
+                match /users/{userId} {
+                    allow read, create, update: if userIsMemberOfGroup(groupId);
+                    // Only allow writes on your user. Or allow author to perform writes.
+                    allow delete: if request.auth.uid == userId;
+                }
+            
+                match /messages/{messageId} {
+                    allow read, write: if userIsMemberOfGroup(groupId);
+                }
+            }
+        }
+
+        // TODO: For security reasons we should probably move private user data in to a private sub collection.
+        match /users/{userId} {
+            allow update: if request.auth.uid == userId; 
+            allow read, create: if request.auth.uid != null;
+        }
+    }
+}

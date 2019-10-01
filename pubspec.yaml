@@ -1,0 +1,148 @@
+name: circles_app
+description: Timy group messaging app
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+
+version: 1.0.23+1
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase dependencies
+  firebase_core: ^0.4.0
+  firebase_analytics: ^5.0.0
+  cloud_firestore: ^0.12.9
+  firebase_auth: ^0.14.0
+  google_sign_in: ^4.0.1 # Firebase auth dependency
+  firebase_storage: ^3.0.5
+  firebase_messaging: ^5.1.3
+  firebase_crashlytics: ^0.1.0+2
+
+  # Redux dependencies
+  redux: ^3.0.0
+  flutter_redux: ^0.5.0
+
+  built_value: ^6.6.0
+  built_collection: ^4.2.2
+
+  image_picker: ^0.6.0+15
+  transparent_image: ^1.0.0
+
+  # We fixed a bug in the plugin
+  media_picker_builder:
+    git:
+      url: git://github.com/janoodleFTW/media_picker_builder.git
+      ref: master
+
+  flutter_native_image:
+    git:
+      url: https://github.com/btastic/flutter_native_image.git
+      ref: fix/ios_compression
+
+  pinch_zoom_image: ^0.2.5
+  flutter_platform_widgets: ^0.12.0
+
+  flutter_linkify: ^2.1.0
+  url_launcher: ^5.0.3
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^1.5.2
+  built_value_generator: ^6.6.0
+
+  test: ^1.6.1
+  mockito: ^4.1.0
+
+  flutter_launcher_icons: "^0.7.2"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  adaptive_icon_background: "#000000"
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/placeholder/user_image_placeholder.png
+    - assets/graphics/avatar_no_picture.png
+    - assets/graphics/visual_twist.png
+    - assets/graphics/visual_twist_white_petrol.png
+    - assets/graphics/icon_notification.png
+    - assets/graphics/icon_smile.png
+    - assets/graphics/updates_indicator.png
+    - assets/graphics/updates_indicator_white.png
+    - assets/graphics/update_indicator_darkgreen.png
+    - assets/graphics/channel/create_new_channel.png
+    - assets/graphics/channel/topic_open.png
+    - assets/graphics/channel/topic_joined.png
+    - assets/graphics/channel/padlock.png
+    - assets/graphics/channel/details_date.png
+    - assets/graphics/channel/details_location.png
+    - assets/graphics/channel/details_padlock.png
+    - assets/graphics/channel/details_members.png
+    - assets/graphics/channel/event_open.png
+    - assets/graphics/channel/event_joined.png
+    - assets/graphics/channel/rsvp/rsvp_maybe.png
+    - assets/graphics/channel/rsvp/rsvp_maybe_large.png
+    - assets/graphics/channel/rsvp/rsvp_no_large.png
+    - assets/graphics/channel/rsvp/rsvp_yes.png
+    - assets/graphics/channel/rsvp/rsvp_yes_large.png
+    - assets/graphics/channel/header_calendar_icon.png
+    - assets/graphics/input/checkbox_active.png
+    - assets/graphics/input/checkbox_inactive.png
+    - assets/graphics/input/icon_add_content.png
+    - assets/graphics/input/icon_camera.png
+    - assets/graphics/input/icon_pictures.png
+    - assets/graphics/menu_icon.png
+    - assets/graphics/menu_more_icon.png
+    - assets/graphics/drawer/settings.png
+    - assets/graphics/drawer/events.png
+    - assets/graphics/drawer/direct_message.png
+    - assets/graphics/drawer/create_topic.png
+    - assets/graphics/drawer/account.png
+    - assets/graphics/upload/indicator_0_try_again.png
+    - assets/graphics/upload/selected.png
+    - assets/graphics/calendar/calendar_today.png
+
+  fonts:
+    - family: Edmondsans-Regular
+      fonts:
+        - asset: fonts/Edmondsans-Regular.otf
+    - family: Edmondsans-Medium
+      fonts:
+        - asset: fonts/Edmondsans-Medium.otf
+    - family: Edmondsans-Bold
+      fonts:
+        - asset: fonts/Edmondsans-Bold.otf
+    - family: Poppins-ExtraBold
+      fonts:
+        - asset: fonts/Poppins-ExtraBold.ttf
+    - family: Poppins-Regular
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
