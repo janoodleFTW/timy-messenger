@@ -171,7 +171,7 @@ When building for release the app will automatically use the production configur
 
 # About
 
-The concept for Timy was created and developed by [kaalita](https://github.com/orgs/janoodleFTW/people/kaalita) and [philippmoeser](https://github.com/orgs/janoodleFTW/people/philippmoeser).
+The concept for Timy was created and developed by [kaalita](https://github.com/kaalita) and [philippmoeser](https://github.com/philippmoeser).
 The the initial version is a MVP messaging app focusing on organising events among groups.
 
 We hope this project can be a reference or building block for your next flutter app. 🚀
