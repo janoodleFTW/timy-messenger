@@ -164,6 +164,10 @@ The app is setup to work with a development and production environment. We sugge
 
 When building for release the app will automatically use the production configuration that you’ve configured in step `B3`.
 
+# External resources
+
+- [Timy Messenger in itsallwidgets.com](https://itsallwidgets.com/timy-messenger)
+- [Building a Messaging App in Flutter — Part I: Project Structure](https://medium.com/@MiBLT/building-a-messaging-app-in-flutter-part-i-project-structure-7d6db38783a5)
 
 # About
 
