@@ -22,4 +22,8 @@ storeFile=../key.jks
 
 Where you set the `storePassword` and the `keyPassword`. You can also change the alias.
 
+You will need to uncomment the section `signingConfigs` in the `app/build.gradle`.
+
+And change the `signingConfig signingConfigs.debug` to `signingConfig signingConfigs.release`.
+
 You can also provide this files from your CI instead of including this in the project.

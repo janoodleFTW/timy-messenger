@@ -47,20 +47,20 @@ android {
         minSdkVersion 21 // avoid max 64k method limit
         targetSdkVersion 28
 
-        def (majorNum, minorNum, buildNum) = flutterVersionName.tokenize( '.' )
-        versionCode majorNum.toInteger() * 1_000_000 + minorNum.toInteger() * 1_000 + buildNum.toInteger()
+        versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
-    }
+//     signingConfigs {
+//         release {
+//             keyAlias keystoreProperties['keyAlias']
+//             keyPassword keystoreProperties['keyPassword']
+//             storeFile file(keystoreProperties['storeFile'])
+//             storePassword keystoreProperties['storePassword']
+//         }
+//     }
+
     buildTypes {
         debug {
             // app id will be "de.janoodle.circlesApp.debug"
@@ -69,7 +69,7 @@ android {
         release {
             // NOTE: ProGuard is not enabled at the moment
             // See: https://flutter.dev/docs/deployment/android to enable it
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
     }
 
