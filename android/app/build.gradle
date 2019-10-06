@@ -53,14 +53,15 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
-    }
+//     signingConfigs {
+//         release {
+//             keyAlias keystoreProperties['keyAlias']
+//             keyPassword keystoreProperties['keyPassword']
+//             storeFile file(keystoreProperties['storeFile'])
+//             storePassword keystoreProperties['storePassword']
+//         }
+//     }
+
     buildTypes {
         debug {
             // app id will be "de.janoodle.circlesApp.debug"
@@ -69,7 +70,7 @@ android {
         release {
             // NOTE: ProGuard is not enabled at the moment
             // See: https://flutter.dev/docs/deployment/android to enable it
-            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
     }
 
