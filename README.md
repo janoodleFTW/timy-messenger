@@ -77,7 +77,7 @@ Please copy the `User-UID` of the created user. We’ll need to add this ID to a
 
 
 ### B2. Create and setup database
-In the firebase console select `Database` under `Develop`  and create a Realtime Database in region `eur3 (europe-west)`.
+In the firebase console select `Database` under `Develop`  and create a Cloud Firestore Database in region `eur3 (europe-west)`.
 
 *Note: To use the app you’ll need to create a group. A “Group” is similar to e.g. a “Team” in Slack. To create one:* 
 
