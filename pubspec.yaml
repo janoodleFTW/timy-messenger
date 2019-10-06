@@ -9,7 +9,7 @@ description: Timy group messaging app
 # In Android, build-name is used as versionName while build-number used as versionCode.
 # Read more about Android versioning at https://developer.android.com/studio/publish/versioning
 
-version: 1.0.23+1
+version: 1.0.0+1
 
 environment:
   sdk: ">=2.2.2 <3.0.0"

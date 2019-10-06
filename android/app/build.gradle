@@ -47,8 +47,7 @@ android {
         minSdkVersion 21 // avoid max 64k method limit
         targetSdkVersion 28
 
-        def (majorNum, minorNum, buildNum) = flutterVersionName.tokenize( '.' )
-        versionCode majorNum.toInteger() * 1_000_000 + minorNum.toInteger() * 1_000 + buildNum.toInteger()
+        versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
