@@ -57,7 +57,7 @@ The backend is build using Firebase’s `node.js` SDK. All files are provided in
 
 ### B1. Setup sign-in method & adding users
 
-An initial sing-in method needs to be configured.
+An initial sign-in method needs to be configured.
 
 - Select your project in [console.firebase.google.com](https://console.firebase.google.com). 
 - Navigate to `Authentication` 
