@@ -1,5 +1,7 @@
 # Timy app
 
+[![Build Status](https://app.bitrise.io/app/1777d1ca81df02fb/status.svg?token=JR4pw9Z3dElWNrDmy3ImLA&branch=master)](https://app.bitrise.io/app/1777d1ca81df02fb)
+
 An amazing open source group messaging app build with flutter. ✨
 
 # Main Features
