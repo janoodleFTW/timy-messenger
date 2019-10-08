@@ -46,7 +46,7 @@ To build and run the mobile apps you’ll need to install [Flutter](https://flut
 $ flutter doctor
 ```
 
-The app is optimized for Android and iOS phones in portrait mode.
+The app is optimised for Android and iOS phones in portrait mode.
 
 **Note:** Additionally you’ll need to add the GoogleService-Info of your Firebase app to your clients as described in `B3. Configure firebase app` below.
 
@@ -137,7 +137,7 @@ $ firebase deploy --only functions
 
 ### B5. Final steps
 
-Run the flutter app using your favorite IDE (e.g. Visual Studio Code / Android Studio). Next, you’ll need to run the app. 
+Run the flutter app using your favourite IDE (e.g. Visual Studio Code / Android Studio). Next, you’ll need to run the app. 
 
 *Note: Please skip any error that might occur.* 
 
@@ -174,6 +174,6 @@ When building for release the app will automatically use the production configur
 # About
 
 The concept for Timy was created and developed by [kaalita](https://github.com/kaalita) and [philippmoeser](https://github.com/philippmoeser).
-The initial version is a MVP messaging app focusing on organizing events among groups.
+The initial version is a MVP messaging app focusing on organising events among groups.
 
 We hope this project can be a reference or building block for your next flutter app. 🚀
