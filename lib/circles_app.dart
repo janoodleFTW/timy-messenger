@@ -135,6 +135,7 @@ class _CirclesAppState extends State<CirclesApp> {
         supportedLocales: [
           const Locale("de", "DE"),
           const Locale("en", "EN"),
+          const Locale("pt_BR", "PT"),
         ],
         title: "Circles App",
         navigatorKey: _navigatorKey,
