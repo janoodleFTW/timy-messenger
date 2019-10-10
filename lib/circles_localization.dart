@@ -50,7 +50,7 @@ class CirclesLocalizations {
       "channel_list_previous": "PREVIOUS",
       "channel_list_upcoming": "UPCOMING",
       "channel_list_events": "Events",
-      "channel_list_unread": "Ungelesen",
+      "channel_list_unread": "Unread",
       "channel_form_topic_name": "Enter topic name",
       "channel_form_topic_description": "Enter purpose (optional)",
       "channel_form_topic_description_helper":
@@ -280,7 +280,7 @@ class CirclesLocalizations {
       "channel_list_previous": "ANTERIOR",
       "channel_list_upcoming": "PRÓXIMOS",
       "channel_list_events": "Eventos",
-      "channel_list_unread": "Não lindo",
+      "channel_list_unread": "Não lido",
       "channel_form_topic_name": "Digite o nome do canal",
       "channel_form_topic_description": "Digite uma descrição (opcional)",
       "channel_form_topic_description_helper":
