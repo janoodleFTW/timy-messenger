@@ -22,6 +22,8 @@ The original developers are still maintainers of the project and will keep an ey
 
 If you notice something not working, feel free to report a bug using the "Report Bug" template.
 
+**All bugs reported that don't follow the template will be marked as 'invalid' and closed.**
+
 ### Adding Documentation
 
 Any sort of documentation is welcome.
