@@ -32,7 +32,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -45,7 +45,7 @@ android {
     defaultConfig {
         applicationId "de.janoodle.circlesApp"
         minSdkVersion 21 // avoid max 64k method limit
-        targetSdkVersion 28
+        targetSdkVersion 29
 
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -64,12 +64,11 @@ android {
     buildTypes {
         debug {
             // app id will be "de.janoodle.circlesApp.debug"
-            applicationIdSuffix ".debug"
         }
         release {
             // NOTE: ProGuard is not enabled at the moment
             // See: https://flutter.dev/docs/deployment/android to enable it
-            signingConfig signingConfigs.debug
+            // signingConfig signingConfigs.release
         }
     }
 
