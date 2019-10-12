@@ -38,6 +38,7 @@ The documentation for Firebase part is inside the `firebase` folder.
 
 
 # Prerequisites & Getting Started
+
 ## Client 
 
 To build and run the mobile apps you’ll need to install [Flutter](https://flutter.dev) and its dependencies. To verify your installation run in the project’s root directory:**‌**
@@ -47,6 +48,13 @@ $ flutter doctor
 ```
 
 The app is optimised for Android and iOS phones in portrait mode.
+
+**IMPORTANT:** The project only supports Flutter version 1.10.5, you will have to change your configuration to it.
+We cannot make sure that other Flutter versions will work.
+
+```
+$ flutter version 1.10.5
+```
 
 **Note:** Additionally you’ll need to add the GoogleService-Info of your Firebase app to your clients as described in `B3. Configure firebase app` below.
 
