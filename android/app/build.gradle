@@ -65,7 +65,7 @@ android {
         release {
             // NOTE: ProGuard is not enabled at the moment
             // See: https://flutter.dev/docs/deployment/android to enable it
-            // signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
     }
 
