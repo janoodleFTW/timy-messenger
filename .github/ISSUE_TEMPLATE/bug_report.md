@@ -38,9 +38,15 @@ If applicable, add screenshots to help explain your problem.
  - Device: [e.g. iPhone6]
  - OS: [e.g. iOS8.1]
  
- **Flutter Information**
+**Flutter Information**
  
  - `flutter doctor` output
+ 
+**Logs**
+
+```
+Paste relevant output logs inside this quotes
+```
 
 **Additional context**
 
