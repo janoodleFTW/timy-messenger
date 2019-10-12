@@ -62,9 +62,6 @@ android {
 //     }
 
     buildTypes {
-        debug {
-            // app id will be "de.janoodle.circlesApp.debug"
-        }
         release {
             // NOTE: ProGuard is not enabled at the moment
             // See: https://flutter.dev/docs/deployment/android to enable it
