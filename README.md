@@ -56,8 +56,7 @@ We cannot make sure that other Flutter versions will work.
 $ flutter version 1.10.5
 ```
 
-**Note:** Additionally you’ll need to add the GoogleService-Info of your Firebase app to your clients as described in `B3. Configure firebase app` below.
-
+**Note:** Additionally you’ll need to setup the backend and add the GoogleService-Info of your Firebase app to your clients as described below.
 
 ## Backend (Firebase)
 
@@ -85,6 +84,7 @@ Please copy the `User-UID` of the created user. We’ll need to add this ID to a
 *Note: You’ll need to have at least one user configured to use the app.*
 
 ### B2. Configure firebase app
+
 Next, you’ll need to configure your firebase app for Flutter as described in [Add Firebase to an App / Flutter](https://firebase.google.com/docs/flutter/setup)
 
 **iOS**
@@ -100,11 +100,11 @@ Next, you’ll need to configure your firebase app for Flutter as described in [
 Follow the instructions in `android/README.md`.
 
 ### B3. Create and setup database
-In the firebase console select `Database` under `Develop`  and create a Cloud Firestore Database in region `eur3 (europe-west)`. Setup database in `test mode` if you don't want to care about access permissions now.
+In the firebase console select `Database` under `Develop`  and create a Cloud Firestore Database. Setup database in `test mode` if you don't want to care about access permissions now.
 
-At this point, **you need to perform login once** on the App, it will create a user document inside the `users` collection.
+At this point, **you need to run and perform login once** on the App, it will create a user document inside the `users` collection.
 
-*Note: To use the app you’ll need to create a group. A “Group” is similar to e.g. a “Team” in Slack. To create one:* 
+**You will see an empty screen. To fix that, continue this setup.** You may need to restart the app after the setup is done.
 
 **Create group collection**
 
@@ -154,16 +154,14 @@ Navigate to the `firebase` directory and deploy all functions using:
 $ firebase deploy --only functions
 ```
 
+Some features of the app can be used without Cloud Functions running, but some others will not work.
+We recommend you to perform this step to enjoy all features.
 
 ### B5. Final steps
 
-Run the flutter app using your favourite IDE (e.g. Visual Studio Code / Android Studio). Next, you’ll need to run the app. 
+Login with the user you’ve created above.
 
-*Note: Please skip any error that might occur.* 
-
-Login with the user you’ve created above. 
 Next create your first `event` to setup the *calendar collection* in our backend. 
-
 
 **Create an event**
 
@@ -173,7 +171,7 @@ Next create your first `event` to setup the *calendar collection* in our backend
 
 At the root level of your database you should now see a collection called `calendar` in your firebase console.
 
-Now we’re ready to deploy all parts of our backend using:
+Now we’re ready to deploy all other parts of our backend using:
 
 ```
 $ firebase deploy
