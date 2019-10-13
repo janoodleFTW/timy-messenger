@@ -73,7 +73,6 @@ An initial sign-in method needs to be configured.
 - Navigate to `Authentication` 
 - Select `Sign-in methods` and activate `Email / Password`.
 
-
 **Adding a user**
 
 Currently, users need to be added *manually*.  
@@ -85,17 +84,32 @@ Please copy the `User-UID` of the created user. We’ll need to add this ID to a
 
 *Note: You’ll need to have at least one user configured to use the app.*
 
+### B2. Configure firebase app
+Next, you’ll need to configure your firebase app for Flutter as described in [Add Firebase to an App / Flutter](https://firebase.google.com/docs/flutter/setup)
 
-### B2. Create and setup database
-In the firebase console select `Database` under `Develop`  and create a Cloud Firestore Database in region `eur3 (europe-west)`.
+**iOS**
+
+- Enter iOS-Bundle-ID: `de.janoodle.circlesApp.debug`
+- Download and rename `GoogleService-Info.plist` to  `GoogleService-Info-Dev.plist`.
+- Copy file to `ios/Runner/Firebase`.
+
+*NOTE: If you’re building for release you’ll additionally need to add a GoogleService-Info-Prod.plist pointing to your production Firebase app.*
+
+**Android**
+
+Follow the instructions in `android/README.md`.
+
+### B3. Create and setup database
+In the firebase console select `Database` under `Develop`  and create a Cloud Firestore Database in region `eur3 (europe-west)`. Setup database in `test mode` if you don't want to care about access permissions now.
+
+At this point, **you need to perform login once** on the App, it will create a user document inside the `users` collection.
 
 *Note: To use the app you’ll need to create a group. A “Group” is similar to e.g. a “Team” in Slack. To create one:* 
-
 
 **Create group collection**
 
 - Select the database you’ve just created.
-- `Create collection` and name it `groups`.\
+- `Create collection` and name it `groups`.
 - Add your first group with the following properties:
 
 | name | type | value |
@@ -107,6 +121,11 @@ In the firebase console select `Database` under `Develop`  and create a Cloud Fi
 
 We’ve now setup our fist test group. In addition to this step, we’ll need to setup a default `Channel` (e.g. something similar to `#general` in Slack).
 
+**Add the new created Group id to the User document**
+
+- Select the User you have now on your database.
+- Add a new field named `joinedGroups` and make it type `Array`
+- Add an entry in this array, with the value equal to the Group document id from Firestore.
 
 **Create channel sub-collection**
 
@@ -120,19 +139,12 @@ We’ve now setup our fist test group. In addition to this step, we’ll need to
 | type | string | TOPIC |
 | visibility | string | OPEN |
 
+**Your Firestore database should look like this (with different ids)**
 
-### B3. Configure firebase app
-Next, you’ll need to configure your firebase app for Flutter as described in [Add Firebase to an App / Flutter](https://firebase.google.com/docs/flutter/setup)
-
-
-**iOS**
-
-- Enter iOS-Bundle-ID: `de.janoodle.circlesApp.debug`
-- Download and rename `GoogleService-Info.plist` to  `GoogleService-Info-Dev.plist`.
-- Copy file to `ios/Runner/Firebase`.
-
-*NOTE: If you’re building for release you’ll additionally need to add a GoogleService-Info-Prod.plist pointing to your production Firebase app.*
-	
+![screenshots](./firestore-1.png)
+![screenshots](./firestore-2.png)
+![screenshots](./firestore-3.png)
+![screenshots](./firestore-4.png)
 	
 ### B4. Deploy firebase functions 
 
