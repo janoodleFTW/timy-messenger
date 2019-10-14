@@ -261,10 +261,12 @@ packages:
   flutter_platform_widgets:
     dependency: "direct main"
     description:
-      name: flutter_platform_widgets
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.20.2"
+      path: "."
+      ref: "beta-1.10.7"
+      resolved-ref: ecfb97b63fcb193a4678708314ac436b22cfe9d4
+      url: "git://github.com/aqwert/flutter_platform_widgets.git"
+    source: git
+    version: "0.20.3-beta.1"
   flutter_redux:
     dependency: "direct main"
     description:

@@ -50,7 +50,12 @@ dependencies:
       ref: fix/ios_compression
 
   pinch_zoom_image: ^0.2.5
-  flutter_platform_widgets: ^0.20.2
+
+  # TODO: Change this library to a stable version
+  flutter_platform_widgets:
+    git:
+      url: git://github.com/aqwert/flutter_platform_widgets.git
+      ref: beta-1.10.7
 
   flutter_linkify: ^2.1.0
   url_launcher: ^5.0.3
