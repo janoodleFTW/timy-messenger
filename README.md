@@ -119,7 +119,7 @@ At this point, **you need to run and perform login once** on the App, it will cr
 | members | array | *User-UID we’ve retrieved in **Adding a user*** above |
 | name | string | test |
 
-We’ve now setup our fist test group. In addition to this step, we’ll need to setup a default `Channel` (e.g. something similar to `#general` in Slack).
+We’ve now setup our first test group. In addition to this step, we’ll need to setup a default `Channel` (e.g. something similar to `#general` in Slack).
 
 **Add the new created Group id to the User document**
 
