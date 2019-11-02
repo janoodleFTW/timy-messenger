@@ -187,9 +187,9 @@ When building for release the app will automatically use the production configur
 # External resources
 
 - [Timy Messenger in itsallwidgets.com](https://itsallwidgets.com/timy-messenger)
-- [Building a Messaging App in Flutter — Part I: Project Structure](https://medium.com/@MiBLT/building-a-messaging-app-in-flutter-part-i-project-structure-7d6db38783a5)
-- [Building a Messaging App in Flutter — Part II: Main Method](https://medium.com/@MiBLT/building-a-messaging-app-in-flutter-part-ii-main-method-b3a70befbba5)
-- [Building a Messaging App in Flutter — Part III: Redux](https://medium.com/@MiBLT/building-a-messaging-app-in-flutter-part-iii-redux-19e6507de8cb)
+- [Building a Messaging App in Flutter — Part I: Project Structure](https://beltran.work/blog/building-a-messaging-app-in-flutter-part-i-project-structure/)
+- [Building a Messaging App in Flutter — Part II: Main Method](https://beltran.work/blog/building-a-messaging-app-in-flutter-part-ii-main-method/)
+- [Building a Messaging App in Flutter — Part III: Redux](https://beltran.work/blog/building-a-messaging-app-in-flutter-part-iii-redux/)
 
 # About
 
