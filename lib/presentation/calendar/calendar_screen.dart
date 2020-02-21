@@ -142,7 +142,7 @@ class CalendarScreen extends StatelessWidget {
     final items = viewModel.calendar.toList();
     double lastSectionHeight = 0;
 
-    if (numberOfHeaderItems > 0) {
+    if (numberOfHeaderItems > 1) {
       final lastHeaderItems =
           viewModel.headerItemSizeMap[numberOfHeaderItems - 1];
       lastSectionHeight = _Style.calenderHeaderHeight +
