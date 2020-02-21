@@ -326,9 +326,6 @@ class CalendarScreen extends StatelessWidget {
 
 /// Private Styles
 class _Style {
-  static const topSectionHeight =
-      _Style.titleHeight + DrawerStyle.sectionPadding * 2;
-
   static const pastItemOpacity = 0.6;
   static const defaultElementPadding = EdgeInsets.only(
     left: 4,

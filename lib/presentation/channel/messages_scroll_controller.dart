@@ -15,5 +15,5 @@ class MessagesScrollController extends InheritedWidget {
   }
 
   static MessagesScrollController of(BuildContext context) =>
-      context.inheritFromWidgetOfExactType(MessagesScrollController);
+      context.dependOnInheritedWidgetOfExactType<MessagesScrollController>();
 }
